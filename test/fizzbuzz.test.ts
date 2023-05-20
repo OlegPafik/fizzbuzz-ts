@@ -22,7 +22,6 @@ describe("Functions that tells us if a number is present", () => {
   });
 })
 
-
 describe("Fizz or Buzz or FizzBuzz because division by 3 or/and 5", () => {
   describe("Fizz number from division by 3", () => {
     it("3 is Fizz", () => {
@@ -124,3 +123,9 @@ describe("Non special numbers", () => {
     expect(fizzBuzz(19)).toEqual("19");
   });
 });
+
+describe("FizzBuzz because it has number 5 and multiple of 3", () => {
+  it("54 is FizzBuzz", () => {
+    expect(fizzBuzz(54)).toEqual("FizzBuzz");
+  })
+})
