@@ -1,5 +1,7 @@
+import { add } from "../src/calculator";
+
 describe("Test", () => {
     it("Test tester", () => {
-      expect(true).toBeTruthy();
+      expect(add("a")).toBeTruthy();
     })
 })
