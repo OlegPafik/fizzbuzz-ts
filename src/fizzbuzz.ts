@@ -31,5 +31,8 @@ export const fizzBuzz = (input: number) => {
   if (have3(input)) {
     return "Fizz";
   }
+  if (have5(input)) {
+    return "Buzz";
+  }
   return input.toString();
 };

@@ -109,3 +109,9 @@ describe("Fizz because it has number 3", () => {
     expect(fizzBuzz(13)).toEqual("Fizz");
   })
 })
+
+describe("Buzz because it has number 5", () => {
+  it("52 is Buzz", () => {
+    expect(fizzBuzz(52)).toEqual("Buzz");
+  })
+})
