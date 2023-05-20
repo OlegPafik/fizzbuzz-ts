@@ -19,9 +19,6 @@ describe("Non special numbers", () => {
   it("11 is 11", () => {
     expect(fizzBuzz(11)).toEqual("11");
   });
-  it("13 is 13", () => {
-    expect(fizzBuzz(13)).toEqual("13");
-  })
   it("14 is 14", () => {
     expect(fizzBuzz(14)).toEqual("14");
   });
@@ -106,3 +103,9 @@ describe("Have number 3 check function", () => {
     expect(have3(40)).toBeFalsy();
   })
 });
+
+describe("Fizz because it has number 3", () => {
+  it("13 is Fizz", () => {
+    expect(fizzBuzz(13)).toEqual("Fizz");
+  })
+})
