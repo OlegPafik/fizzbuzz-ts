@@ -1,3 +1,3 @@
 export const add = (numbers: string) => {
-    return true
+    return 0
 }

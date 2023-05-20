@@ -1,7 +1,9 @@
 import { add } from "../src/calculator";
 
-describe("Test", () => {
-    it("Test tester", () => {
-      expect(add("a")).toBeTruthy();
+describe("Método add", () => {
+    describe("String vacío", () => {
+        it("Si recibe string vacío devuelve 0", () => {
+        expect(add("")).toEqual(0);
+        })
     })
 })
