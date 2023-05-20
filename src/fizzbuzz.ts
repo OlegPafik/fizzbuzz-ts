@@ -1,12 +1,13 @@
 export const fizzBuzz = (input: number) => {
   const isFizz = input % 3 === 0
-  if (isFizz && input % 5 === 0) {
+  const isBuzz = input % 5 === 0
+  if (isFizz && isBuzz) {
     return "FizzBuzz";
   }
   if (isFizz) {
     return "Fizz";
   }
-  if (input % 5 === 0) {
+  if (isBuzz) {
     return "Buzz";
   }
   return input.toString();
