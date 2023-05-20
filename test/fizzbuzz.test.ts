@@ -8,4 +8,8 @@ describe("Non special numbers", () => {
   it("2 is 2", () => {
     expect(fizzBuzz(2)).toEqual("2");
   });
+
+  it("4 is 4", () => {
+    expect(fizzBuzz(4)).toEqual("4");
+  });
 });
