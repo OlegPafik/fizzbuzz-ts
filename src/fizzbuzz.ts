@@ -1,8 +1,9 @@
 export const fizzBuzz = (input: number) => {
-  if (input % 3 === 0 && input % 5 === 0) {
+  const isFizz = input % 3 === 0
+  if (isFizz && input % 5 === 0) {
     return "FizzBuzz";
   }
-  if (input % 3 === 0) {
+  if (isFizz) {
     return "Fizz";
   }
   if (input % 5 === 0) {
