@@ -17,14 +17,20 @@ describe("Método add", () => {
   });
 
   describe("Dos números", () => {
-    it("Si recibe string con dos números y los suma", () => {
+    it("Si recibe string con 1 y 2 los suma", () => {
       expect(add("1,2")).toEqual(3);
     });
-    it("Si recibe string con dos números y los suma", () => {
+    it("Si recibe string con 1 y 3 los suma", () => {
       expect(add("1,3")).toEqual(4);
     });
-    it("Si recibe string con dos números y los suma", () => {
-      expect(add("2,4")).toEqual(6);
+    it("Si recibe string 100 y 42 los suma", () => {
+      expect(add("100,42")).toEqual(142);
+    });
+  });
+
+  describe("Tres números", () => {
+    it("Si recibe string con 1, 2 y 3, los suma", () => {
+      expect(add("1,2,3")).toEqual(6);
     });
   });
 });
