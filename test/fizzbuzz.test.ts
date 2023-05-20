@@ -13,3 +13,9 @@ describe("Non special numbers", () => {
     expect(fizzBuzz(4)).toEqual("4");
   });
 });
+
+describe("Fizz number", () => {
+  it("3 is Fizz", () => {
+    expect(fizzBuzz(3)).toEqual("Fizz");
+  });
+});
