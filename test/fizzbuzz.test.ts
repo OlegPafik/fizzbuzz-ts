@@ -41,8 +41,8 @@ describe("Non special numbers", () => {
     expect(fizzBuzz(17)).toEqual("17");
   });
 
-  it("18 is 18", () => {
-    expect(fizzBuzz(18)).toEqual("18");
+  it("19 is 19", () => {
+    expect(fizzBuzz(19)).toEqual("19");
   });
 });
 
