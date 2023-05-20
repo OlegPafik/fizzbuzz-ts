@@ -28,5 +28,8 @@ export const fizzBuzz = (input: number) => {
   if (isBuzzFromDivision) {
     return "Buzz";
   }
+  if (have3(input)) {
+    return "Fizz";
+  }
   return input.toString();
 };
