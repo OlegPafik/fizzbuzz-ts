@@ -28,9 +28,12 @@ describe("Método add", () => {
     });
   });
 
-  describe("Tres números", () => {
+  describe("Varios números", () => {
     it("Si recibe string con 1, 2 y 3, los suma", () => {
       expect(add("1,2,3")).toEqual(6);
+    });
+    it("Si recibe string con 1, 2, 3, 4 los suma", () => {
+      expect(add("1,2,3,4")).toEqual(10);
     });
   });
 });
