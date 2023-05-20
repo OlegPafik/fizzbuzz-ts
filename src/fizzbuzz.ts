@@ -48,7 +48,7 @@ export const fizzBuzz = (input: number) => {
 
 const printResult = () => {
   for (let numberToTransform = 1; numberToTransform <= 100; numberToTransform++) {
-    console.log(fizzBuzz(numberToTransform))
+    // console.log(fizzBuzz(numberToTransform))
   }
 }
 
