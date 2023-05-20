@@ -1,4 +1,4 @@
-import { fizzBuzz, have5 } from "../src/fizzbuzz";
+import { fizzBuzz, have5, have3 } from "../src/fizzbuzz";
 
 describe("Non special numbers", () => {
   it("1 is 1", () => {
@@ -94,5 +94,15 @@ describe("Have number 5 check function", () => {
   
   it("40 is false", () => {
     expect(have5(40)).toBeFalsy();
+  })
+});
+
+describe("Have number 3 check function", () => {
+  it("13 is true", () => {
+    expect(have3(13)).toBeTruthy();
+  })
+  
+  it("40 is false", () => {
+    expect(have3(40)).toBeFalsy();
   })
 });
