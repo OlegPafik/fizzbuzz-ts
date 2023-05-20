@@ -2,14 +2,12 @@ export const add = (numbers: string) => {
   if (numbers === "") {
     return 0;
   }
-  if (numbers === "1,2") {
-    return 3;
-  }
-  if (numbers === "1,3") {
-    return 4;
-  }
-  if (numbers === "2,4") {
-    return 6;
+  if (numbers.includes(",")) {
+    const individualNumbersStr: string[] = numbers.split(",");
+    const individualNumbers = individualNumbersStr.map((numberStr) =>
+      parseInt(numberStr)
+    );
+    return individualNumbers[0] + individualNumbers[1];
   }
   return parseInt(numbers);
 };
