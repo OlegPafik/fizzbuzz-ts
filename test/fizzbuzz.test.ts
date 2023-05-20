@@ -87,8 +87,12 @@ describe("FizzBuzz number", () => {
   });
 });
 
-describe("Have number 5", () => {
+describe("Have number 5 check function", () => {
   it("52 is true", () => {
     expect(have5(52)).toBeTruthy();
+  })
+  
+  it("40 is false", () => {
+    expect(have5(40)).toBeFalsy();
   })
 });
