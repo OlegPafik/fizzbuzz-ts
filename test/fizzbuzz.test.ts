@@ -84,4 +84,7 @@ describe("FizzBuzz number", () => {
   it("15 is FizzBuzz", () => {
     expect(fizzBuzz(15)).toEqual("FizzBuzz");
   });
+  it("30 is FizzBuzz", () => {
+    expect(fizzBuzz(30)).toEqual("FizzBuzz");
+  });
 });
