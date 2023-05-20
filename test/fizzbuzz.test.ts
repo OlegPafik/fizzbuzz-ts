@@ -36,6 +36,14 @@ describe("Non special numbers", () => {
   it("16 is 16", () => {
     expect(fizzBuzz(16)).toEqual("16");
   });
+
+  it("17 is 17", () => {
+    expect(fizzBuzz(17)).toEqual("17");
+  });
+
+  it("18 is 18", () => {
+    expect(fizzBuzz(18)).toEqual("18");
+  });
 });
 
 describe("Fizz number", () => {
