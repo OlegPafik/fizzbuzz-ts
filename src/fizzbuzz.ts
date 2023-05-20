@@ -15,17 +15,17 @@ export const have3 = (input: number): boolean => {
 }
 
 export const fizzBuzz = (input: number) => {
-  const isFizz = input % 3 === 0
-  const isBuzz = input % 5 === 0
+  const isFizzFromDivision = input % 3 === 0
+  const isBuzzFromDivision = input % 5 === 0
   const isFizzBuzzFromDivision = input % 15 === 0
 
   if (isFizzBuzzFromDivision) {
     return "FizzBuzz";
   }
-  if (isFizz) {
+  if (isFizzFromDivision) {
     return "Fizz";
   }
-  if (isBuzz) {
+  if (isBuzzFromDivision) {
     return "Buzz";
   }
   return input.toString();
