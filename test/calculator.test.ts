@@ -7,8 +7,11 @@ describe("Método add", () => {
         })
     })
     describe("Un número", () => {
-        it("Si recibe string con un número devuelve el número", () => {
+        it("Si recibe string con un número de una cifra devuelve el número", () => {
         expect(add("1")).toEqual(1);
+        })
+        it("Si recibe string con un número de varias cifras devuelve el número", () => {
+            expect(add("9999")).toEqual(9999);
         })
     })
 })
