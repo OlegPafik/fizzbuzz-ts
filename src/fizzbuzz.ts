@@ -1,3 +1,4 @@
-export const fizzBuzz = () => {
-  return "1";
+export const fizzBuzz = (input: number) => {
+  const result: string = input.toString();
+  return result;
 };
