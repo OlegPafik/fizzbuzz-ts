@@ -25,16 +25,16 @@ export const fizzBuzz = (input: number) => {
   if (isFizzBuzzFromDivision) {
     return "FizzBuzz";
   }
-  if (isFizzFromDivision && have5(input)) {
+  if (isFizzFromDivision && have5(input)) { // Better naming isDivisibleBy3
     return "FizzBuzz";
   }
-  if (isBuzzFromDivision && have3(input)) {
+  if (isBuzzFromDivision && have3(input)) { // Better naming isDivisibleBy5
     return "FizzBuzz";
   }
-  if (isFizzFromDivision) {
+  if (isFizzFromDivision) { // Better naming isDivisibleBy3
     return "Fizz";
   }
-  if (isBuzzFromDivision) {
+  if (isBuzzFromDivision) { // Better naming isDivisibleBy5
     return "Buzz";
   }
   if (have3(input)) {
