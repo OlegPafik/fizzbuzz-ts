@@ -1,5 +1,97 @@
 import { fizzBuzz, have5, have3 } from "../src/fizzbuzz";
 
+describe("Functions that tells us if a number is present", () => {
+  describe("Have number 5 check function", () => {
+    it("52 is true", () => {
+      expect(have5(52)).toBeTruthy();
+    })
+    
+    it("40 is false", () => {
+      expect(have5(40)).toBeFalsy();
+    })
+  });
+
+  describe("Have number 3 check function", () => {
+    it("13 is true", () => {
+      expect(have3(13)).toBeTruthy();
+    })
+    
+    it("40 is false", () => {
+      expect(have3(40)).toBeFalsy();
+    })
+  });
+})
+
+
+describe("Fizz or Buzz or FizzBuzz because division by 3 or/and 5", () => {
+  describe("Fizz number from division by 3", () => {
+    it("3 is Fizz", () => {
+      expect(fizzBuzz(3)).toEqual("Fizz");
+    });
+    it("6 is Fizz", () => {
+      expect(fizzBuzz(6)).toEqual("Fizz");
+    });
+    it("9 is Fizz", () => {
+      expect(fizzBuzz(9)).toEqual("Fizz");
+    });
+    it("12 is Fizz", () => {
+      expect(fizzBuzz(12)).toEqual("Fizz");
+    });
+    it("18 is Fizz", () => {
+      expect(fizzBuzz(18)).toEqual("Fizz");
+    });
+  });
+  describe("Buzz number from division by 5", () => {
+    it("5 is Buzz", () => {
+      expect(fizzBuzz(5)).toEqual("Buzz");
+    });
+    it("10 is Buzz", () => {
+      expect(fizzBuzz(10)).toEqual("Buzz");
+    });
+    it("20 is Buzz", () => {
+      expect(fizzBuzz(20)).toEqual("Buzz");
+    });
+  });
+  describe("FizzBuzz number from division by 5 and 3", () => {
+    it("15 is FizzBuzz", () => {
+      expect(fizzBuzz(15)).toEqual("FizzBuzz");
+    });
+    it("30 is FizzBuzz", () => {
+      expect(fizzBuzz(30)).toEqual("FizzBuzz");
+    });
+    it("45 is FizzBuzz", () => {
+      expect(fizzBuzz(45)).toEqual("FizzBuzz");
+    });
+    it("60 is FizzBuzz", () => {
+      expect(fizzBuzz(60)).toEqual("FizzBuzz");
+    });
+    it("75 is FizzBuzz", () => {
+      expect(fizzBuzz(75)).toEqual("FizzBuzz");
+    });
+    it("90 is FizzBuzz", () => {
+      expect(fizzBuzz(90)).toEqual("FizzBuzz");
+    });
+  });
+})
+
+describe("Fizz or Buzz or FizzBuzz because it has the numbers 3 or/and 5", () => {
+  describe("Fizz because it has number 3", () => {
+    it("13 is Fizz", () => {
+      expect(fizzBuzz(13)).toEqual("Fizz");
+    })
+  })
+  describe("Buzz because it has number 5", () => {
+    it("52 is Buzz", () => {
+      expect(fizzBuzz(52)).toEqual("Buzz");
+    })
+  })
+  describe("FizzBuzz because it has numbers 5 and 3", () => {
+    it("53 is FizzBuzz", () => {
+      expect(fizzBuzz(53)).toEqual("FizzBuzz");
+    })
+  })
+});
+
 describe("Non special numbers", () => {
   it("1 is 1", () => {
     expect(fizzBuzz(1)).toEqual("1");
@@ -32,93 +124,3 @@ describe("Non special numbers", () => {
     expect(fizzBuzz(19)).toEqual("19");
   });
 });
-
-describe("Fizz number", () => {
-  it("3 is Fizz", () => {
-    expect(fizzBuzz(3)).toEqual("Fizz");
-  });
-  it("6 is Fizz", () => {
-    expect(fizzBuzz(6)).toEqual("Fizz");
-  });
-  it("9 is Fizz", () => {
-    expect(fizzBuzz(9)).toEqual("Fizz");
-  });
-  it("12 is Fizz", () => {
-    expect(fizzBuzz(12)).toEqual("Fizz");
-  });
-  it("18 is Fizz", () => {
-    expect(fizzBuzz(18)).toEqual("Fizz");
-  });
-});
-
-describe("Buzz number", () => {
-  it("5 is Buzz", () => {
-    expect(fizzBuzz(5)).toEqual("Buzz");
-  });
-  it("10 is Buzz", () => {
-    expect(fizzBuzz(10)).toEqual("Buzz");
-  });
-  it("20 is Buzz", () => {
-    expect(fizzBuzz(20)).toEqual("Buzz");
-  });
-});
-
-describe("FizzBuzz number", () => {
-  it("15 is FizzBuzz", () => {
-    expect(fizzBuzz(15)).toEqual("FizzBuzz");
-  });
-  it("30 is FizzBuzz", () => {
-    expect(fizzBuzz(30)).toEqual("FizzBuzz");
-  });
-  it("45 is FizzBuzz", () => {
-    expect(fizzBuzz(45)).toEqual("FizzBuzz");
-  });
-  it("60 is FizzBuzz", () => {
-    expect(fizzBuzz(60)).toEqual("FizzBuzz");
-  });
-  it("75 is FizzBuzz", () => {
-    expect(fizzBuzz(75)).toEqual("FizzBuzz");
-  });
-  it("90 is FizzBuzz", () => {
-    expect(fizzBuzz(90)).toEqual("FizzBuzz");
-  });
-});
-
-describe("Have number 5 check function", () => {
-  it("52 is true", () => {
-    expect(have5(52)).toBeTruthy();
-  })
-  
-  it("40 is false", () => {
-    expect(have5(40)).toBeFalsy();
-  })
-});
-
-describe("Have number 3 check function", () => {
-  it("13 is true", () => {
-    expect(have3(13)).toBeTruthy();
-  })
-  
-  it("40 is false", () => {
-    expect(have3(40)).toBeFalsy();
-  })
-});
-
-describe("Fizz because it has number 3", () => {
-  it("13 is Fizz", () => {
-    expect(fizzBuzz(13)).toEqual("Fizz");
-  })
-})
-
-describe("Buzz because it has number 5", () => {
-  it("52 is Buzz", () => {
-    expect(fizzBuzz(52)).toEqual("Buzz");
-  })
-})
-
-
-describe("FizzBuzz because it has numbers 5 and 3", () => {
-  it("53 is FizzBuzz", () => {
-    expect(fizzBuzz(53)).toEqual("FizzBuzz");
-  })
-})
