@@ -20,6 +20,22 @@ describe("Non special numbers", () => {
   it("8 is 8", () => {
     expect(fizzBuzz(8)).toEqual("8");
   });
+
+  it("11 is 11", () => {
+    expect(fizzBuzz(11)).toEqual("11");
+  });
+
+  it("13 is 13", () => {
+    expect(fizzBuzz(13)).toEqual("13");
+  });
+
+  it("14 is 14", () => {
+    expect(fizzBuzz(14)).toEqual("14");
+  });
+
+  it("16 is 16", () => {
+    expect(fizzBuzz(16)).toEqual("16");
+  });
 });
 
 describe("Fizz number", () => {
