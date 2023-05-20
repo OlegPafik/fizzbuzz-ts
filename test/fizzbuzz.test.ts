@@ -1,4 +1,4 @@
-import { fizzBuzz } from "../src/fizzbuzz";
+import { fizzBuzz, have5 } from "../src/fizzbuzz";
 
 describe("Non special numbers", () => {
   it("1 is 1", () => {
@@ -85,4 +85,10 @@ describe("FizzBuzz number", () => {
   it("90 is FizzBuzz", () => {
     expect(fizzBuzz(90)).toEqual("FizzBuzz");
   });
+});
+
+describe("Have number 5", () => {
+  it("52 is true", () => {
+    expect(have5(52)).toBeTruthy();
+  })
 });
