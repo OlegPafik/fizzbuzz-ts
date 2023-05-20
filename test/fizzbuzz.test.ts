@@ -16,6 +16,10 @@ describe("Non special numbers", () => {
   it("7 is 7", () => {
     expect(fizzBuzz(7)).toEqual("7");
   });
+
+  it("8 is 8", () => {
+    expect(fizzBuzz(8)).toEqual("8");
+  });
 });
 
 describe("Fizz number", () => {
