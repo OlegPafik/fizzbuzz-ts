@@ -12,6 +12,10 @@ describe("Non special numbers", () => {
   it("4 is 4", () => {
     expect(fizzBuzz(4)).toEqual("4");
   });
+
+  it("7 is 7", () => {
+    expect(fizzBuzz(7)).toEqual("7");
+  });
 });
 
 describe("Fizz number", () => {
