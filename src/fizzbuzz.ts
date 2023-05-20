@@ -1,7 +1,9 @@
 export const fizzBuzz = (input: number) => {
   const isFizz = input % 3 === 0
   const isBuzz = input % 5 === 0
-  if (isFizz && isBuzz) {
+  const isFizzBuzzFromDivision = input % 15 === 0
+
+  if (isFizzBuzzFromDivision) {
     return "FizzBuzz";
   }
   if (isFizz) {
