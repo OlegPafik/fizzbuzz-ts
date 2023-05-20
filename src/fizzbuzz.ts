@@ -1,4 +1,9 @@
 export const fizzBuzz = (input: number) => {
-  const result: string = input.toString();
+  let result: string;
+  if (input === 3) {
+    result = "Fizz";
+  } else {
+    result = input.toString();
+  }
   return result;
 };
