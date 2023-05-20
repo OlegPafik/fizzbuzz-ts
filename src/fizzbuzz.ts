@@ -1,13 +1,11 @@
 export const fizzBuzz = (input: number) => {
-  let result: string;
   if (input % 3 === 0 && input % 5 === 0) {
-    result = "FizzBuzz";
+    return "FizzBuzz";
   } else if (input % 3 === 0) {
-    result = "Fizz";
+    return "Fizz";
   } else if (input % 5 === 0) {
-    result = "Buzz";
+    return "Buzz";
   } else {
-    result = input.toString();
+    return input.toString();
   }
-  return result;
 };
